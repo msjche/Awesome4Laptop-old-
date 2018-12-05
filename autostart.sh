@@ -9,11 +9,10 @@ function run {
 
 #run "megasync"
 run "xscreensaver --no-splash"
-run "/usr/bin/redshift"
 #run "/usr/bin/dropbox"
 #run "insync start"
 run "compton"
-run "/usr/bin/redshift"
+#run "/usr/bin/redshift"
 run "urxvtd -q -f -o"
 run "mpd"
 run "nm-applet"

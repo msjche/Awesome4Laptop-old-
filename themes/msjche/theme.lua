@@ -11,6 +11,7 @@ local awful   = require("awful")
 local wibox   = require("wibox")
 local os      = { getenv = os.getenv, setlocale = os.setlocale }
 local awesome, client = awesome, client
+local gpmdp   = require("widgets.gpmdp")
 
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/msjche"
@@ -366,6 +367,8 @@ function theme.at_screen_connect(s)
             wibox.widget.systray(),
             bar_spr,
             --mail.widget,
+--	    brightness.widget,
+	    gpmdp.widget,
             mpdicon,
             theme.mpd.widget,
             baticon,

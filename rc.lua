@@ -20,6 +20,7 @@ local lain          = require("lain")
 local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+local gpmdp	    = require("widgets.gpmdp")
 -- }}}
 
 -- {{{ Error handling
@@ -223,6 +224,7 @@ globalkeys = awful.util.table.join(
 	awful.key({ modkey, "Shift" }, "b", function () awful.util.spawn( browser ) end),
 	awful.key({ modkey }, "b", function () awful.util.spawn( "qutebrowser --backend webengine" ) end),
 	awful.key({ modkey, "Shift" }, "b", function () awful.util.spawn( "firefox-bin" ) end),
+	awful.key({ modkey, "Shift" }, "k", function () awful.util.spawn( "xscreensaver-command -lock" ) end),
 
 
     -- Hotkeys
