@@ -8,7 +8,7 @@ function run {
 }
 
 #run "megasync"
-run "xscreensaver --no-splash"
+run "xscreensaver -no-splash"
 #run "/usr/bin/dropbox"
 #run "insync start"
 run "compton"
